@@ -10,7 +10,7 @@ export function ProjectsSection() {
   const projects = [
     {
       title: 'Sentiment Analysis System',
-      description: 'ML-powered sentiment analysis tool using NLP techniques to classify text emotions with 94% accuracy. Built with transformer models.',
+      description: 'ML-powered sentiment analysis tool using NLP techniques to classify text emotions with 95% accuracy. Built with transformer models.',
       tech: ['Python', 'TensorFlow', 'NLTK', 'Scikit-learn'],
       image: '/sentiment-analysis.jpg',
       liveUrl: '#',
