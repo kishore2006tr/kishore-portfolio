@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
-import { Code2, Database, Globe, Layout, Server, Smartphone } from 'lucide-react';
+import { Code2, Database, Globe, Layout, Server, Brain } from 'lucide-react';
 
 export function TechStackSection() {
   const ref = useRef(null);
@@ -9,34 +9,29 @@ export function TechStackSection() {
 
   const techStack = [
     {
-      icon: <Layout className="w-8 h-8" />,
-      name: 'Frontend',
-      description: 'React, Next.js, TypeScript, Tailwind CSS',
-    },
-    {
-      icon: <Server className="w-8 h-8" />,
-      name: 'Backend',
-      description: 'Node.js, Express, Django, Python',
+      icon: <Brain className="w-8 h-8" />,
+      name: 'ML Frameworks',
+      description: 'TensorFlow, PyTorch, Scikit-learn, Keras',
     },
     {
       icon: <Database className="w-8 h-8" />,
-      name: 'Database',
-      description: 'MongoDB, PostgreSQL, Supabase, Redis',
+      name: 'Data Science',
+      description: 'Pandas, NumPy, Matplotlib, Seaborn',
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      name: 'Cloud & DevOps',
-      description: 'AWS, Docker, Vercel, GitHub Actions',
+      name: 'Cloud & MLOps',
+      description: 'AWS SageMaker, Docker, MLflow, Kubeflow',
     },
     {
       icon: <Code2 className="w-8 h-8" />,
       name: 'Tools',
-      description: 'Git, VS Code, Postman, Figma',
+      description: 'Git, VS Code, Jupyter, Postman',
     },
     {
-      icon: <Smartphone className="w-8 h-8" />,
-      name: 'Mobile',
-      description: 'React Native, Progressive Web Apps',
+      icon: <Brain className="w-8 h-8" />,
+      name: 'ML & AI',
+      description: 'TensorFlow, PyTorch, Scikit-learn, Pandas',
     },
   ];
 
@@ -44,7 +39,7 @@ export function TechStackSection() {
     <section
       ref={ref}
       className="relative py-32 px-6 md:px-12 overflow-hidden"
-      style={{ backgroundColor: '#0d1117' }}
+      style={{ backgroundColor: '#0f172a' }}
     >
       {/* Background */}
       <div className="absolute inset-0 opacity-10">
@@ -114,8 +109,8 @@ export function TechStackSection() {
                 >
                   {tech.icon}
                 </div>
-                <h3 className="text-white text-xl mb-3">{tech.name}</h3>
-                <p className="text-white/60 leading-relaxed">{tech.description}</p>
+                <h3 className="text-slate-100 text-xl mb-3">{tech.name}</h3>
+                <p className="text-slate-300 leading-relaxed">{tech.description}</p>
               </div>
             </motion.div>
           ))}

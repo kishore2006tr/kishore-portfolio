@@ -3,7 +3,7 @@ import { ChevronDown, Download, Eye } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ backgroundColor: '#0B0F19' }}>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ backgroundColor: '#0f172a' }}>
       {/* Animated gradient background */}
       <div className="absolute inset-0 opacity-30">
         <div
@@ -21,14 +21,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.p
-            className="text-[#00F5FF] mb-4 tracking-wider"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            Welcome to my portfolio
-          </motion.p>
+        
           
           <motion.h1
             className="text-5xl md:text-7xl lg:text-8xl mb-6"
@@ -42,26 +35,26 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Hi, I'm <span className="block mt-2">Alex Johnson</span>
+            Hi, I'm <span className="block mt-2">KISHORE V</span>
           </motion.h1>
           
           <motion.h2
-            className="text-2xl md:text-4xl text-white/90 mb-6"
+            className="text-2xl md:text-4xl text-slate-100 mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Full Stack Developer | Building Scalable Web Apps
+            Machine Learning Engineer | Building Intelligent Solutions
           </motion.h2>
           
           <motion.p
-            className="text-white/70 max-w-2xl mx-auto mb-12 text-lg leading-relaxed"
+            className="text-slate-300 max-w-2xl mx-auto mb-12 text-lg leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
           >
-            CSE 3rd year student passionate about creating innovative solutions.
-            Specializing in modern web technologies and cloud-native applications.
+            I'm a cse student passionate about creating innovative solutions.
+            Specializing in machine learning algorithms and data-driven applications.
           </motion.p>
           
           <motion.div
@@ -75,10 +68,10 @@ export function HeroSection() {
               href="#projects"
               className="group relative px-8 py-4 rounded-lg overflow-hidden"
               style={{
-                background: 'linear-gradient(135deg, #7F5AF0 0%, #00F5FF 100%)',
-                boxShadow: '0 0 30px rgba(0, 245, 255, 0.5)',
+                background: 'linear-gradient(135deg, #a855f7 0%, #06b6d4 100%)',
+                boxShadow: '0 0 30px rgba(168, 85, 247, 0.5)',
               }}
-              whileHover={{ scale: 1.05, boxShadow: '0 0 50px rgba(0, 245, 255, 0.8)' }}
+              whileHover={{ scale: 1.05, boxShadow: '0 0 50px rgba(168, 85, 247, 0.8)' }}
               whileTap={{ scale: 0.95 }}
             >
               <span className="relative z-10 flex items-center gap-2 text-white">
@@ -92,14 +85,14 @@ export function HeroSection() {
               href="#"
               className="group relative px-8 py-4 rounded-lg overflow-hidden"
               style={{
-                border: '2px solid rgba(0, 245, 255, 0.3)',
-                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                border: '2px solid rgba(168, 85, 247, 0.3)',
+                backgroundColor: 'rgba(30, 41, 59, 0.8)',
                 backdropFilter: 'blur(10px)',
               }}
               whileHover={{
                 scale: 1.05,
-                borderColor: 'rgba(0, 245, 255, 0.6)',
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                borderColor: 'rgba(168, 85, 247, 0.6)',
+                backgroundColor: 'rgba(30, 41, 59, 0.95)',
               }}
               whileTap={{ scale: 0.95 }}
             >
@@ -121,7 +114,7 @@ export function HeroSection() {
       >
         <motion.a
           href="#about"
-          className="flex flex-col items-center text-white/50 hover:text-[#00F5FF] transition-colors"
+          className="flex flex-col items-center text-slate-400 hover:text-cyan-400 transition-colors"
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
         >

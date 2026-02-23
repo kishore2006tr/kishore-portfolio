@@ -25,9 +25,9 @@ export function Navigation() {
     <motion.nav
       className="fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-4 transition-all duration-300"
       style={{
-        backgroundColor: isScrolled ? 'rgba(11, 15, 25, 0.8)' : 'transparent',
+        backgroundColor: isScrolled ? 'rgba(15, 23, 42, 0.9)' : 'transparent',
         backdropFilter: isScrolled ? 'blur(20px)' : 'none',
-        borderBottom: isScrolled ? '1px solid rgba(255, 255, 255, 0.1)' : 'none',
+        borderBottom: isScrolled ? '1px solid #334155' : 'none',
       }}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -46,7 +46,7 @@ export function Navigation() {
           }}
           whileHover={{ scale: 1.05 }}
         >
-          AJ
+          KV
         </motion.a>
 
         {/* Desktop Navigation */}
@@ -55,7 +55,7 @@ export function Navigation() {
             <motion.a
               key={item.label}
               href={item.href}
-              className="text-white/70 hover:text-[#00F5FF] transition-colors relative group"
+              className="text-slate-300 hover:text-cyan-400 transition-colors relative group"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
@@ -63,7 +63,7 @@ export function Navigation() {
               {item.label}
               <span
                 className="absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300"
-                style={{ backgroundColor: '#00F5FF' }}
+                style={{ backgroundColor: '#a855f7' }}
               />
             </motion.a>
           ))}
@@ -89,7 +89,7 @@ export function Navigation() {
 
         {/* Mobile Menu Button */}
         <motion.button
-          className="md:hidden text-white"
+          className="md:hidden text-slate-300"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           whileTap={{ scale: 0.9 }}
         >
@@ -102,9 +102,9 @@ export function Navigation() {
         <motion.div
           className="md:hidden mt-4 py-4 rounded-lg"
           style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.05)',
+            backgroundColor: 'rgba(15, 23, 42, 0.9)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.1)',
+            border: '1px solid #334155',
           }}
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
@@ -114,7 +114,7 @@ export function Navigation() {
             <a
               key={item.label}
               href={item.href}
-              className="block px-4 py-3 text-white/70 hover:text-[#00F5FF] hover:bg-white/5 transition-colors"
+              className="block px-4 py-3 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {item.label}

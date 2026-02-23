@@ -7,9 +7,9 @@ export function AboutSection() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const skills = [
-    'Next.js', 'React', 'Node.js', 'TypeScript', 'MongoDB', 
-    'Supabase', 'Django', 'Tailwind CSS', 'PostgreSQL', 'Stripe',
-    'GraphQL', 'Docker', 'AWS', 'Redis'
+    'Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'Pandas', 'NumPy',
+    'Jupyter', 'Machine Learning', 'Deep Learning', 'Data Science',
+    'Docker', 'AWS', 'Redis'
   ];
 
   return (
@@ -17,7 +17,7 @@ export function AboutSection() {
       id="about"
       ref={ref}
       className="relative py-32 px-6 md:px-12 overflow-hidden"
-      style={{ backgroundColor: '#0B0F19' }}
+      style={{ backgroundColor: '#0f172a' }}
     >
       {/* Background gradient */}
       <div className="absolute inset-0 opacity-20">
@@ -72,8 +72,12 @@ export function AboutSection() {
                   boxShadow: '0 0 50px rgba(0, 245, 255, 0.3)',
                 }}
               >
-                <div className="w-full h-full bg-gradient-to-br from-[#7F5AF0]/20 to-[#00F5FF]/20 flex items-center justify-center text-white/30 text-6xl">
-                  AJ
+                <div className="w-full h-full bg-gradient-to-br from-[#7F5AF0]/20 to-[#00F5FF]/20 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="/profile.png" 
+                    alt="Kishore V Profile"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -85,20 +89,14 @@ export function AboutSection() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <p className="text-white/80 text-lg leading-relaxed mb-6">
-              I'm a <span className="text-[#00F5FF]">passionate Full Stack Developer</span> and CSE 3rd year student 
-              with a strong focus on building <span className="text-[#7F5AF0]">scalable, user-friendly web applications</span>. 
-              I love turning complex problems into simple, beautiful, and intuitive solutions.
+            <p className="text-slate-300 text-lg leading-relaxed mb-6">
+              I'm a <span className="text-[#a855f7]">passionate Machine Learning Engineer</span> and CSE 3rd year student 
+              with a strong focus on building <span className="text-[#06b6d4]">intelligent, data-driven solutions</span>. 
+              I love turning complex data into actionable insights and scalable ML applications.
             </p>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
-              With expertise in modern frameworks and cloud technologies, I specialize in creating 
-              performant applications that deliver exceptional user experiences. Always learning, 
-              always building.
-            </p>
-
             {/* Skills */}
             <div>
-              <h3 className="text-white/90 text-xl mb-4">Tech Stack & Skills</h3>
+              <h3 className="text-slate-100 text-xl mb-4">Tech Stack & Skills</h3>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill, index) => (
                   <motion.span

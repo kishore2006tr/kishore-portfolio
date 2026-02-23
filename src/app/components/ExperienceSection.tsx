@@ -11,34 +11,10 @@ export function ExperienceSection() {
     {
       icon: <GraduationCap className="w-6 h-6" />,
       title: 'Computer Science & Engineering',
-      organization: 'University of Technology',
+      organization: 'S.A. Engineering College',
       date: '2022 - Present',
-      description: 'Currently in 3rd year, focusing on software engineering, algorithms, and web technologies. CGPA: 3.8/4.0',
+      description: 'Currently pursuing B.E in CSE with focus on machine learning and AI. CGPA: 8.45/10.',
       type: 'education',
-    },
-    {
-      icon: <Briefcase className="w-6 h-6" />,
-      title: 'Full Stack Developer Intern',
-      organization: 'TechCorp Solutions',
-      date: 'Jun 2024 - Aug 2024',
-      description: 'Built scalable web applications using React and Node.js. Collaborated with cross-functional teams to deliver high-quality features.',
-      type: 'work',
-    },
-    {
-      icon: <Rocket className="w-6 h-6" />,
-      title: 'Freelance Web Developer',
-      organization: 'Self-Employed',
-      date: '2023 - Present',
-      description: 'Developed custom web solutions for 10+ clients. Specialized in e-commerce platforms and business websites.',
-      type: 'work',
-    },
-    {
-      icon: <Briefcase className="w-6 h-6" />,
-      title: 'Frontend Developer Intern',
-      organization: 'StartupHub Inc',
-      date: 'Jan 2024 - Apr 2024',
-      description: 'Created responsive user interfaces and implemented modern design systems. Improved page load times by 40%.',
-      type: 'work',
     },
   ];
 
@@ -46,7 +22,7 @@ export function ExperienceSection() {
     <section
       ref={ref}
       className="relative py-32 px-6 md:px-12 overflow-hidden"
-      style={{ backgroundColor: '#0d1117' }}
+      style={{ backgroundColor: '#0f172a' }}
     >
       {/* Background */}
       <div className="absolute inset-0 opacity-10">
@@ -124,12 +100,12 @@ export function ExperienceSection() {
                       {item.icon}
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-white text-lg mb-1">{item.title}</h3>
-                      <p className="text-[#00F5FF] text-sm mb-1">{item.organization}</p>
-                      <p className="text-white/50 text-xs">{item.date}</p>
+                      <h3 className="text-slate-100 text-lg mb-1">{item.title}</h3>
+                      <p className="text-[#a855f7] text-sm mb-1">{item.organization}</p>
+                      <p className="text-slate-400 text-xs">{item.date}</p>
                     </div>
                   </div>
-                  <p className="text-white/70 text-sm leading-relaxed">{item.description}</p>
+                  <p className="text-slate-300 text-sm leading-relaxed">{item.description}</p>
                 </motion.div>
               </div>
 

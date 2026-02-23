@@ -9,26 +9,26 @@ export function ProjectsSection() {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with real-time inventory, payment integration, and admin dashboard. Built for scalability and performance.',
-      tech: ['Next.js', 'Stripe', 'MongoDB', 'Tailwind CSS'],
-      image: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      title: 'Sentiment Analysis System',
+      description: 'ML-powered sentiment analysis tool using NLP techniques to classify text emotions with 94% accuracy. Built with transformer models.',
+      tech: ['Python', 'TensorFlow', 'NLTK', 'Scikit-learn'],
+      image: '/sentiment-analysis.jpg',
       liveUrl: '#',
       githubUrl: '#',
     },
     {
-      title: 'Task Management SaaS',
-      description: 'Collaborative project management tool with real-time updates, team chat, and analytics. Features drag-and-drop kanban boards.',
-      tech: ['React', 'Supabase', 'TypeScript', 'shadcn/ui'],
-      image: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      title: 'Image Classification CNN',
+      description: 'Deep learning model for multi-class image classification achieving 98% accuracy on CIFAR-10 dataset using custom CNN architecture.',
+      tech: ['PyTorch', 'OpenCV', 'NumPy', 'Matplotlib'],
+      image: '/image-classification.jpg',
       liveUrl: '#',
       githubUrl: '#',
     },
     {
-      title: 'AI Content Generator',
-      description: 'AI-powered content creation platform leveraging GPT-4. Generates blog posts, social media content, and marketing copy.',
-      tech: ['Next.js', 'OpenAI API', 'PostgreSQL', 'Vercel'],
-      image: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+      title: 'Predictive Analytics Dashboard',
+      description: 'ML-driven forecasting system for sales prediction using time series analysis and ensemble methods. Interactive dashboard with real-time insights.',
+      tech: ['Pandas', 'Scikit-learn', 'Plotly', 'Flask'],
+      image: '/analytics-dashboard.jpg',
       liveUrl: '#',
       githubUrl: '#',
     },
@@ -39,7 +39,7 @@ export function ProjectsSection() {
       id="projects"
       ref={ref}
       className="relative py-32 px-6 md:px-12 overflow-hidden"
-      style={{ backgroundColor: '#0B0F19' }}
+      style={{ backgroundColor: '#0f172a' }}
     >
       {/* Background */}
       <div className="absolute inset-0 opacity-10">
@@ -101,16 +101,16 @@ export function ProjectsSection() {
               {/* Project Image/Mockup */}
               <div
                 className="h-48 flex items-center justify-center text-white/30 text-2xl relative overflow-hidden"
-                style={{ background: project.image }}
+                style={{ backgroundImage: `url(${project.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
               >
-                <div className="absolute inset-0 bg-black/20" />
+                <div className="absolute inset-0 bg-black/40" />
                 <span className="relative z-10">Project Preview</span>
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-white text-xl mb-3">{project.title}</h3>
-                <p className="text-white/70 text-sm mb-4 leading-relaxed">
+                <h3 className="text-slate-100 text-xl mb-3">{project.title}</h3>
+                <p className="text-slate-300 text-sm mb-4 leading-relaxed">
                   {project.description}
                 </p>
 

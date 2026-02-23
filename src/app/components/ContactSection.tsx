@@ -27,7 +27,7 @@ export function ContactSection() {
       id="contact"
       ref={ref}
       className="relative py-32 px-6 md:px-12 overflow-hidden"
-      style={{ backgroundColor: '#0B0F19' }}
+      style={{ backgroundColor: '#0f172a' }}
     >
       {/* Background */}
       <div className="absolute inset-0 opacity-20">
@@ -58,7 +58,7 @@ export function ContactSection() {
             Get In Touch
           </h2>
           <div className="w-20 h-1 mx-auto rounded-full mb-4" style={{ background: 'linear-gradient(90deg, #7F5AF0 0%, #00F5FF 100%)' }} />
-          <p className="text-white/70 text-lg">
+          <p className="text-slate-300 text-lg">
             Have a project in mind? Let's work together!
           </p>
         </motion.div>
@@ -74,16 +74,16 @@ export function ContactSection() {
             onSubmit={handleSubmit}
             className="p-8 md:p-10 rounded-2xl"
             style={{
-              backgroundColor: 'rgba(255, 255, 255, 0.05)',
+              backgroundColor: 'rgba(30, 41, 59, 0.8)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
+              border: '1px solid #334155',
               boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
             }}
           >
             <div className="space-y-6">
               {/* Name Input */}
               <div>
-                <label htmlFor="name" className="block text-white/90 mb-2">
+                <label htmlFor="name" className="block text-slate-100 mb-2">
                   Name
                 </label>
                 <input
@@ -93,16 +93,16 @@ export function ContactSection() {
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 rounded-lg outline-none transition-all"
                   style={{
-                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
-                    border: '1px solid rgba(255, 255, 255, 0.1)',
-                    color: 'white',
+                    backgroundColor: '#1e293b',
+                    border: '1px solid #334155',
+                    color: '#f1f5f9',
                   }}
                   onFocus={(e) => {
-                    e.target.style.borderColor = '#00F5FF';
-                    e.target.style.boxShadow = '0 0 20px rgba(0, 245, 255, 0.3)';
+                    e.target.style.borderColor = '#a855f7';
+                    e.target.style.boxShadow = '0 0 20px rgba(168, 85, 247, 0.3)';
                   }}
                   onBlur={(e) => {
-                    e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                    e.target.style.borderColor = '#334155';
                     e.target.style.boxShadow = 'none';
                   }}
                   placeholder="Your name"
@@ -112,7 +112,7 @@ export function ContactSection() {
 
               {/* Email Input */}
               <div>
-                <label htmlFor="email" className="block text-white/90 mb-2">
+                <label htmlFor="email" className="block text-slate-100 mb-2">
                   Email
                 </label>
                 <input
@@ -122,16 +122,16 @@ export function ContactSection() {
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 rounded-lg outline-none transition-all"
                   style={{
-                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
-                    border: '1px solid rgba(255, 255, 255, 0.1)',
-                    color: 'white',
+                    backgroundColor: '#1e293b',
+                    border: '1px solid #334155',
+                    color: '#f1f5f9',
                   }}
                   onFocus={(e) => {
-                    e.target.style.borderColor = '#00F5FF';
-                    e.target.style.boxShadow = '0 0 20px rgba(0, 245, 255, 0.3)';
+                    e.target.style.borderColor = '#a855f7';
+                    e.target.style.boxShadow = '0 0 20px rgba(168, 85, 247, 0.3)';
                   }}
                   onBlur={(e) => {
-                    e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                    e.target.style.borderColor = '#334155';
                     e.target.style.boxShadow = 'none';
                   }}
                   placeholder="your.email@example.com"
@@ -141,7 +141,7 @@ export function ContactSection() {
 
               {/* Message Textarea */}
               <div>
-                <label htmlFor="message" className="block text-white/90 mb-2">
+                <label htmlFor="message" className="block text-slate-100 mb-2">
                   Message
                 </label>
                 <textarea
@@ -151,16 +151,16 @@ export function ContactSection() {
                   rows={5}
                   className="w-full px-4 py-3 rounded-lg outline-none transition-all resize-none"
                   style={{
-                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
-                    border: '1px solid rgba(255, 255, 255, 0.1)',
-                    color: 'white',
+                    backgroundColor: '#1e293b',
+                    border: '1px solid #334155',
+                    color: '#f1f5f9',
                   }}
                   onFocus={(e) => {
-                    e.target.style.borderColor = '#00F5FF';
-                    e.target.style.boxShadow = '0 0 20px rgba(0, 245, 255, 0.3)';
+                    e.target.style.borderColor = '#a855f7';
+                    e.target.style.boxShadow = '0 0 20px rgba(168, 85, 247, 0.3)';
                   }}
                   onBlur={(e) => {
-                    e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                    e.target.style.borderColor = '#334155';
                     e.target.style.boxShadow = 'none';
                   }}
                   placeholder="Tell me about your project..."
@@ -175,11 +175,11 @@ export function ContactSection() {
                 style={{
                   background: 'linear-gradient(135deg, #7F5AF0 0%, #00F5FF 100%)',
                   color: 'white',
-                  boxShadow: '0 0 30px rgba(0, 245, 255, 0.4)',
+                  boxShadow: '0 0 30px rgba(168, 85, 247, 0.4)',
                 }}
                 whileHover={{
                   scale: 1.02,
-                  boxShadow: '0 0 50px rgba(0, 245, 255, 0.6)',
+                  boxShadow: '0 0 50px rgba(168, 85, 247, 0.6)',
                 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -204,15 +204,15 @@ export function ContactSection() {
                 rel="noopener noreferrer"
                 className="p-4 rounded-full"
                 style={{
-                  backgroundColor: 'rgba(255, 255, 255, 0.05)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
-                  color: 'white',
+                  backgroundColor: '#1e293b',
+                  border: '1px solid #334155',
+                  color: '#f1f5f9',
                 }}
                 whileHover={{
-                  backgroundColor: 'rgba(0, 245, 255, 0.1)',
-                  borderColor: '#00F5FF',
-                  color: '#00F5FF',
-                  boxShadow: '0 0 20px rgba(0, 245, 255, 0.4)',
+                  backgroundColor: 'rgba(168, 85, 247, 0.1)',
+                  borderColor: '#a855f7',
+                  color: '#a855f7',
+                  boxShadow: '0 0 20px rgba(168, 85, 247, 0.4)',
                   scale: 1.1,
                 }}
                 whileTap={{ scale: 0.9 }}
